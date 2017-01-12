@@ -10,14 +10,14 @@
         "script": "prefix.js",
         "connections": ["Shorten"]
       }
-    ]
+    ],
     "output": [
       {
         "id": "Shorten",
         "type": "UserScript",
         "script": "shorten.js",
         "connections": ["Copy"]
-      }
+      },
       {
         "id": "Copy",
         "type": "CopyToClipboard",

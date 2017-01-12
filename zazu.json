@@ -1,0 +1,28 @@
+{
+  "blocks": {
+    "input": [
+      {
+        "id": "Short",
+        "type": "PrefixScript",
+        "prefix": "short",
+        "space": false,
+        "args": "None",
+        "script": "prefix.js",
+        "connections": ["Shorten"]
+      }
+    ]
+    "output": [
+      {
+        "id": "Shorten",
+        "type": "UserScript",
+        "script": "shorten.js",
+        "connections": ["Copy"]
+      }
+      {
+        "id": "Copy",
+        "type": "CopyToClipboard",
+        "text": "{value}"
+      }
+    ]
+  }
+}
